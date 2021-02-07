@@ -32,6 +32,7 @@ namespace AspNetWebAPIApp.Controllers
             }
             return Ok(product);
         }
+
         [Route("api/GetFromDB")]
         public IEnumerable<Product> GetProductsFromDb()
         {
@@ -45,7 +46,6 @@ namespace AspNetWebAPIApp.Controllers
                 {
                     result.Add(item);
                 }
-
             }
 
             return result;
